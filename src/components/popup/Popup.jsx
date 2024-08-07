@@ -62,13 +62,17 @@ function Popup({ datas, setDatas }) {
 
   return (
     <div>
-      <Button
+        <div className="container">
+        <Button
+        className="save-btn"
         variant="light"
         style={{ border: "2px solid white" }}
         onClick={handleShow}
       >
         Save Segment
       </Button>
+        </div>
+     
       <Offcanvas
         style={{ width: "30%" }}
         show={show}
@@ -154,7 +158,6 @@ function Popup({ datas, setDatas }) {
                     <option>Add schema to segment</option>
                     {datas?.map((item, index) => (
                       <option
-                        // data-metaMediaId={index}
                         key={index}
                         value={item.value}
                       >

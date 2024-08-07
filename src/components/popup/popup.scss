@@ -1,0 +1,102 @@
+/* header styles */
+
+.header-container {
+  background: #5ccbd1;
+  .icon-arrow-left {
+    color: white;
+  }
+  .para-heading {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+  }
+}
+
+// segments
+
+.trails-user {
+  width: 28%;
+  .circle-1 {
+    border-radius: 50%;
+    background: #8ef5ad;
+    width: 10%;
+    height: 10px;
+  }
+}
+
+.trails-group {
+  width: 28%;
+  .circle-2 {
+    border-radius: 50%;
+    background: #f5537c;
+    width: 10%;
+    height: 10px;
+  }
+}
+
+.schema-container-1 {
+  padding: 2%;
+  width: 100%;
+  height: auto;
+  border: 2px solid #6cf0f5;
+  border-radius: 2px;
+  .schema-inside-container {
+    border-radius: 50%;
+    background: #8ef5ad;
+    width: 3%;
+    height: 10px;
+  }
+  .remove-box-1 {
+    width: 10%;
+    height: 35px;
+    border-radius: 10px;
+    background: #ebfaec;
+    .remove-box-icon-1 {
+      cursor: pointer;
+      color: green;
+    }
+  }
+}
+
+.add-schema-container-1 {
+  border-radius: 50%;
+  background: #d1cbcc;
+  width: 3%;
+  height: 10px;
+}
+
+.remove-add-schema {
+  width: 10%;
+  height: 35px;
+  border-radius: 10px;
+  background: #ebfaec;
+  .remove-box-icon-2 {
+    cursor: pointer;
+    color: green;
+  }
+}
+
+.Add-schema {
+  cursor: pointer;
+  width: 40%;
+  border-bottom: 1px solid lightgreen;
+  color: lightgreen;
+}
+
+/* footer styles */
+
+.offcanvas-footer {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #e6e3e3;
+
+  .save-btn {
+    background: #3bf78a;
+    border: none;
+    color: white;
+  }
+  .cls-btn{
+    color: #fa52d0
+  }
+}

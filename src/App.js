@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+
+
+import React, { useState } from 'react'
+import Popup from './components/popup/Popup'
 
 function App() {
+  const [datas, setDatas] = useState([
+        {id:1, label: 'First Name', value: 'first_name' },
+        {id:2, label: 'Last Name', value: 'last_name' },
+        {id:3, label: 'Gender', value: 'gender' },
+        {id:4, label: 'Age', value: 'age' },
+        {id:5, label: 'Account Name', value: 'account_name' },
+        {id:6, label: 'City', value: 'city' },
+        {id:7, label: 'State', value: 'state' }
+      ]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <Popup datas={datas} setDatas={setDatas}/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
